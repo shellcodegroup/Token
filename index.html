@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Power Cost Calculator</h1>
+        <form id="powerForm">
+            <label for="devices">Number of Devices:</label>
+            <input type="number" id="devices" name="devices" required>
+
+            <div id="powerInputs">
+                <label for="watts">Watts:</label>
+                <input type="number" id="watts" name="watts">
+                <p>OR</p>
+                <label for="volts">Volts:</label>
+                <input type="number" id="volts" name="volts">
+                <label for="amps">Amps:</label>
+                <input type="number" id="amps" name="amps">
+            </div>
+
+            <label for="time">Time (in minutes):</label>
+            <input type="number" id="time" name="time" required>
+
+            <button type="submit">Calculate Cost</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
